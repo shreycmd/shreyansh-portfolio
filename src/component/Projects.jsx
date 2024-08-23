@@ -2,25 +2,29 @@ import React from 'react';
 import Projectcard from './Projectcard';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import eatease from "../assets/eatease.png"
+import todo from "../assets/todo.jpeg"
+import hotstar from "../assets/hotstar.png"
+import  flip from "../assets/flip.png"
 
 let projects = [
   {
-    img: "/src/assets/eatease.png",
+    img: eatease,
     head: "EatEase",
     para: "A user-friendly food ordering app designed for a seamless experience. Easily browse, customize your order, and enjoy a smooth checkout process—all with an intuitive interface."
   },
   {
-    img: "/src/assets/todo.jpeg",
+    img: todo,
     head: "Todo App",
     para: "A simple and intuitive to-do app designed to help you organize tasks efficiently. Easily add, prioritize, and manage your to-do list with a clean and user-friendly interface."
   },
   {
-    img: "/src/assets/hotstar.png",
+    img:hotstar,
     head: "Hotstar Clone",
     para: "A frontend-only Hotstar clone that replicates the streaming platform's user interface. Experience seamless browsing through categories, featured content, and visually appealing design—all built with modern web technologies."
   },
   {
-    img: "/src/assets/flip.png",
+    img: flip,
     head: "Card Crisp",
     para: "A flashcard web app featuring flip functionality for an interactive learning experience. Easily create, view, and flip through cards to reveal answers, enhancing your study sessions with a sleek and responsive design."
   },

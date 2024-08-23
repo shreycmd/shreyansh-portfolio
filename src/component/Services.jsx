@@ -9,25 +9,25 @@ import { useInView } from 'react-intersection-observer';
 
 let info = [
   {
-    img: "/src/assets/frontend.png",
+    img: fe,
     head: "Frontend Development",
     para: "Crafting sleek, responsive, and modern web applications",
     color: "orange-300",
   },
   {
-    img: "/src/assets/backend.jpeg",
+    img: be,
     head: "Backend Development",
     para: "Building scalable and efficient backend systems for seamless integration",
     color: "purple-300",
   },
   {
-    img: "/src/assets/clapi.png",
+    img: clapi,
     head: "API Integration",
     para: "Implementing robust APIs to enhance dynamic functionalities",
     color: "blue-300",
   },
   {
-    img: "/src/assets/figma.png",
+    img: figma,
     head: "Design To Code",
     para: "Transforming Figma designs into pixel-perfect React components",
     color: "red-300",
