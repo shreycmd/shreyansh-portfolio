@@ -62,7 +62,7 @@ function Services() {
       <div className="text-center text-5xl text-purple-950 font-bold ">
         What I Do?
       </div>
-      <div className="mt-10 flex gap-3 justify-evenly">
+      <div className="mt-10 grid-cols-1 md:flex gap-2 justify-around pb-5">
         {info.map((item, index) => (
           <motion.div key={index} variants={itemVariants}>
             <Featurecard

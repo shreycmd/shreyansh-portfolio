@@ -54,7 +54,7 @@ function Intro() {
       </div>
 
         {/* Animated buttons with bounce effect */}
-        <div className="w-full flex justify-around mt-8 pb-10">
+        <div className="w-full flex justify-around ">
           {['Get in Touch', 'View My Work'].map((text, index) => (
             <motion.button
               key={index}
