@@ -31,7 +31,7 @@ function Intro() {
 
         {/* Animated subtitle with delay */}
         <motion.p
-          className="mt-10 text-xl text-justify"
+          className="mt-10 text-xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, delay: 0.5 }}
