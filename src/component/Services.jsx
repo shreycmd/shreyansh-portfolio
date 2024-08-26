@@ -37,7 +37,7 @@ let info = [
 function Services() {
   const { ref, inView } = useInView({
     triggerOnce: true,  // Trigger only once when it comes into view
-    threshold: 0.2,     // Trigger when 20% of the component is visible
+    threshold: 0.4,     // Trigger when 20% of the component is visible
   });
 
   const containerVariants = {
