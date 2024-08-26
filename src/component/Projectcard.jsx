@@ -13,7 +13,7 @@ function Projectcard({ image, para, head }) {
 
   return (
     <motion.div
-      className={`mt-5 bg-white h-[300px] w-[300px] flex break-words flex-col justify-center items-center gap-5 flex-wrap rounded-2xl hover:shadow-2xl hover:shadow-gray-700`}
+      className={`mt-5 bg-white h-[250px] md:h-[300px] w-full md:w-[300px] flex break-words flex-col justify-center items-center gap-5 flex-wrap rounded-2xl hover:shadow-2xl hover:shadow-gray-700`}
       variants={cardVariants}
       initial="hidden"
       animate="visible"

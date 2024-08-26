@@ -56,7 +56,7 @@ function Projects() {
       variants={containerVariants}
     >
       <h1 className='text-5xl text-center pt-5'>Projects</h1>
-      <div className='mt-10 flex gap-2 justify-around pb-5'>
+      <div className='mt-10 grid-cols-1 md:flex gap-2 justify-around pb-5'>
         {projects.map((item, index) => (
           <motion.div key={index} variants={itemVariants}>
             <Projectcard 

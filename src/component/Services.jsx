@@ -37,7 +37,7 @@ let info = [
 function Services() {
   const { ref, inView } = useInView({
     triggerOnce: true,  // Trigger only once when it comes into view
-    threshold: 0.2,     // Trigger when 20% of the component is visible
+    threshold: 0.4,     // Trigger when 20% of the component is visible
   });
 
   const containerVariants = {
@@ -62,7 +62,7 @@ function Services() {
       <div className="text-center text-5xl text-purple-950 font-bold ">
         What I Do?
       </div>
-      <div className="mt-10 flex gap-3 justify-evenly">
+      <div className="mt-10 grid-cols-1 md:flex gap-2 justify-around pb-5">
         {info.map((item, index) => (
           <motion.div key={index} variants={itemVariants}>
             <Featurecard

@@ -6,7 +6,15 @@ import tweet from "../assets/twitter.png"
 import git from "../assets/github-mark-c791e9551fe4/github-mark/github-mark.png"
 
 import { motion } from 'framer-motion';
- 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+ const connect=[{
+  "text":"Get in touch",
+  "link":"mailto:shrey03505@gmail.com"
+ },
+{
+  "text":"View my work",
+  "link":"https://github.com/shreycmd"
+}]
 const links = [
   { icon: lc, url: "https://leetcode.com/u/johnwicksp003/" },
   { icon: linkedin, url: "https://www.linkedin.com/in/shreyansh-pandey-995805249/ " },
@@ -31,7 +39,7 @@ function Intro() {
 
         {/* Animated subtitle with delay */}
         <motion.p
-          className="mt-10 text-xl"
+          className="mt-10 text-xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, delay: 0.5 }}
@@ -54,16 +62,18 @@ function Intro() {
       </div>
 
         {/* Animated buttons with bounce effect */}
-        <div className="w-full flex justify-around mt-8 pb-10">
-          {['Get in Touch', 'View My Work'].map((text, index) => (
+        <div className="w-full  text-center grid grid-cols-1 items-center justify-center md:flex  md:justify-evenly mt-4 ">
+          {connect.map((text, index) => (
+            <a key={index} href={text.link} target="_blank" rel="noopener noreferrer">
             <motion.button
               key={index}
-              className="border-2 border-black rounded-xl px-8 py-2 hover:bg-sky-300"
+              className="border-2 border-black rounded-xl mt-4 px-4 md:px-8 py-2 hover:bg-sky-300"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              {text}
+              {text.text}
             </motion.button>
+            </a>
           ))}
         </div>
       </div>
